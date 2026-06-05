@@ -60,34 +60,33 @@ class Dosen extends Orang {
     }
 }
 
-    class Mahasiswa extends Orang {
-        private String nim;
-        private ArrayList<MataKuliah> mataKuliahDiambil;
+class Mahasiswa extends Orang {
+    private String nim;
+    private ArrayList<MataKuliah> mataKuliahDiambil;
 
-        public Mahasiswa(String nama, String nim) {
-            super(nama);
-            this.nim = nim;
-            this.mataKuliahDiambil = new ArrayList<>();
-        }
-
-        public void ambilMataKuliah(MataKuliah mataKuliah) {
-            mataKuliahDiambil.add(mataKuliah);
-        }
-
-        @Override
-        public void tampilkanPeran() {
-            System.out.println(getNama() + " berperan sebagai Mahasiswa.");
-        }
-
-        public void tampilkanKrs() {
-            System.out.println("Mahasiswa : " + getNama());
-            System.out.println("NIM       : " + nim);
-            System.out.println("Mata Kuliah yang Diambil:");
-
-            for (MataKuliah mk : mataKuliahDiambil) {
-                System.out.println("- " + mk.getInfo());
-            }
-        }
+    public Mahasiswa(String nama, String nim) {
+        super(nama);
+        this.nim = nim;
+        this.mataKuliahDiambil = new ArrayList<>();
     }
 
-    
+    public void ambilMataKuliah(MataKuliah mataKuliah) {
+        mataKuliahDiambil.add(mataKuliah);
+    }
+
+    @Override
+    public void tampilkanPeran() {
+        System.out.println(getNama() + " berperan sebagai Mahasiswa.");
+    }
+
+    public void tampilkanKrs() {
+        System.out.println("Mahasiswa : " + getNama());
+        System.out.println("NIM       : " + nim);
+        System.out.println("Mata Kuliah yang Diambil:");
+
+        for (MataKuliah mk : mataKuliahDiambil) {
+            System.out.println("- " + mk.getInfo());
+        }
+    }
+}
+
