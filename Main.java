@@ -7,5 +7,10 @@ abstract class Orang {
         this.nama = nama;
     }
 
+    public String getNama() {
+        return nama;
+    }
+
+    public abstract void tampilkanPeran();
 }
 
