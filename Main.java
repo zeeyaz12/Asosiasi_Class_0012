@@ -44,4 +44,19 @@ class Dosen extends Orang {
         mataKuliahDiajar.add(mataKuliah);
     }
 
-    
+    @Override
+    public void tampilkanPeran() {
+        System.out.println(getNama() + " berperan sebagai Dosen.");
+    }
+
+    public void tampilkanMataKuliahDiajar() {
+        System.out.println("Dosen : " + getNama());
+        System.out.println("NIDN  : " + nidn);
+        System.out.println("Mata Kuliah yang Diajar:");
+
+        for (MataKuliah mk : mataKuliahDiajar) {
+            System.out.println("- " + mk.getInfo());
+        }
+    }
+}
+
