@@ -40,4 +40,3 @@ class Dosen extends Orang {
         this.mataKuliahDiajar = new ArrayList<>();
     }
 
-    
