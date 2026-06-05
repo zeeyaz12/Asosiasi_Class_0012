@@ -40,3 +40,8 @@ class Dosen extends Orang {
         this.mataKuliahDiajar = new ArrayList<>();
     }
 
+    public void tambahMataKuliah(MataKuliah mataKuliah) {
+        mataKuliahDiajar.add(mataKuliah);
+    }
+
+    
