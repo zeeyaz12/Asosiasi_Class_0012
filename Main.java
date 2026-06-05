@@ -91,5 +91,30 @@ class Mahasiswa extends Orang {
 }
 public class Main {
     public static void main(String[] args) {
-            }
+        MataKuliah pbo = new MataKuliah("IF204", "Pemrograman Berorientasi Objek", 3);
+        MataKuliah web = new MataKuliah("IF305", "Pemrograman Web", 3);
+        MataKuliah strukturData = new MataKuliah("IF201", "Struktur Data", 3);
+
+        Dosen dosen = new Dosen("Pak Indra", "0712345601");
+        dosen.tambahMataKuliah(pbo);
+        dosen.tambahMataKuliah(web);
+
+        Mahasiswa mahasiswa = new Mahasiswa("Andi Pratama", "230411001");
+        mahasiswa.ambilMataKuliah(pbo);
+        mahasiswa.ambilMataKuliah(strukturData);
+
+        System.out.println("=== Data Peran ===");
+        dosen.tampilkanPeran();
+        mahasiswa.tampilkanPeran();
+
+        System.out.println();
+
+        System.out.println("=== Data Dosen ===");
+        dosen.tampilkanMataKuliahDiajar();
+
+        System.out.println();
+
+        System.out.println("=== Data Mahasiswa ===");
+        mahasiswa.tampilkanKrs();
+    }
 }
