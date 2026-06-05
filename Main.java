@@ -103,18 +103,6 @@ public class Main {
         mahasiswa.ambilMataKuliah(pbo);
         mahasiswa.ambilMataKuliah(strukturData);
 
-        System.out.println("=== Data Peran ===");
-        dosen.tampilkanPeran();
-        mahasiswa.tampilkanPeran();
-
-        System.out.println();
-
-        System.out.println("=== Data Dosen ===");
-        dosen.tampilkanMataKuliahDiajar();
-
-        System.out.println();
-
-        System.out.println("=== Data Mahasiswa ===");
-        mahasiswa.tampilkanKrs();
+        
     }
 }
